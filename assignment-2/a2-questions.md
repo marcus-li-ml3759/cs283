@@ -110,9 +110,9 @@ Please answer the following questions and submit in your repo for the second ass
     - Please explain why the file size reported by the `ls` command was 128 bytes after adding student with ID=1, 256 after adding student with ID=3, and 4160 after adding the student with ID=64? 
 
         > **ANSWER:** The file size reported by the 'ls' increases in increments of 64 bytes per student record
-		  > because each student_t structure is 64 bytes. However, when a student with ID=3 is added, there is a gap
-		  > between ID=1 and ID=3, causing unused space, so the file size appears as 256 bytes. When ID=64 is added, the
-		  > file grows to 64 * 64 = 4160 bytes. 
+		   because each student_t structure is 64 bytes. However, when a student with ID=3 is added, there is a gap
+		   between ID=1 and ID=3, causing unused space, so the file size appears as 256 bytes. When ID=64 is added, the
+		   file grows to 64 * 64 = 4160 bytes. 
 
     -   Why did the total storage used on the disk remain unchanged when we added the student with ID=1, ID=3, and ID=63, but increased from 4K to 8K when we added the student with ID=64? 
 

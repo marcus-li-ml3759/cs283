@@ -133,5 +133,5 @@ Please answer the following questions and submit in your repo for the second ass
         We see from above adding a student with a very large student ID (ID=99999) increased the file size to 6400000 as shown by `ls` but the raw storage only increased to 12K as reported by `du`.  Can provide some insight into why this happened?
 
         > **ANSWER:**  This happens because Linux filesystems optimize sparse files by not allocation physical
-		  > storage for empty regions. The file appears large to 'ls' because of how 'lseek()' positions data, but 'du'
-		  > only reports the actual allocated blocks, which remains minimal due to sparse file optimization. 
+		   storage for empty regions. The file appears large to 'ls' because of how 'lseek()' positions data, but 'du'
+		   only reports the actual allocated blocks, which remains minimal due to sparse file optimization. 
